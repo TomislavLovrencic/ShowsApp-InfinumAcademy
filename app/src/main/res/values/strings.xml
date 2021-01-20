@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shows-TomislavLovrencic</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_user">Welcome user</string>
+    <string name="log_in">LOG IN</string>
+
+</resources>

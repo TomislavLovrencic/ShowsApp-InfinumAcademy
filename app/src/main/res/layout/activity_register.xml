@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:background="@android:color/white"
+                                                   android:layout_height="match_parent">
+
+
+    <ImageButton android:layout_width="24dp"
+                 android:src="@drawable/ic_light"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="40dp"
+                 android:id="@+id/btnBackRegister"
+                 android:background="@android:color/white"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginStart="24dp"/>
+
+    <TextView
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/textViewRegister"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="43dp"
+            app:layout_constraintStart_toEndOf="@+id/btnBackRegister"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleDrawable="@drawable/ic_akcije_show_password_red"
+            app:passwordToggleContentDescription="description"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Before"
+            android:layout_height="64dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textInputLayout2">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_akcije_show_password_red"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Password"
+                android:id="@+id/editTextPasswordRegister"
+                android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            tools:layout_editor_absoluteX="0dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegister" android:id="@+id/textInputLayout">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="e-mail"
+                android:id="@+id/editTextEmail"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleDrawable="@drawable/ic_akcije_show_password_red"
+            app:passwordToggleContentDescription="description"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Before"
+            android:layout_height="64dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textInputLayout3">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:drawableRight="@drawable/ic_akcije_show_password_red"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Password again"
+                android:id="@+id/editTextPasswordAgainRegister"
+                android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:layout_width="match_parent"
+            android:text="Register"
+            android:textColor="#fff"
+            android:enabled="false"
+            android:background="@color/After"
+            android:id="@+id/buttonRegister"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="47dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
